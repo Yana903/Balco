@@ -1,0 +1,32 @@
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.layoutFooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright {
+  font-size: 14px;
+  margin-top: 6px;
+  color: #afafaf;
+}
+
+.layoutItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.addressBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin-right: 20px;
+}

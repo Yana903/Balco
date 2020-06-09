@@ -1,0 +1,13 @@
+.sectionBreadcrumbs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: url("../../images/bg-3.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

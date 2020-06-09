@@ -1,0 +1,41 @@
+.cardCart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.cardTitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    line-height: 17px;
+}
+
+.num {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+
+.num p {
+    margin-right: 10px;
+}

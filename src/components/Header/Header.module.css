@@ -1,0 +1,74 @@
+.header {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.layoutHeader {
+    width: 100%;
+}
+
+.layoutHeader,
+.layoutItem {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoBlock a {
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 700px;
+    color: #000;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.logoDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    line-height: 19px;
+}
+
+.addressBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.addressBlock p {
+    font-size: 14px;
+    color: #b5b5b5;
+    line-height: 18px;
+}
+
+.addressBlock a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #007DC6;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.addressBlock a:hover {
+    text-decoration: none;
+}
