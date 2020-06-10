@@ -1,49 +1,49 @@
 .sectionHero {
-  width: 100%;
-  position: relative;
+    width: 100%;
+    position: relative;
 }
 
 .heroBackground {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-image: url("../../images/bg-1.jpg");
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url("../../images/bg-1.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .heroForeground {
-  position: relative;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  min-height: 430px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    min-height: 430px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .heroForeground::after {
     content: '';
-display: block;
-background: url("../../images/img-tara.png") no-repeat;
-width: 672px;
-height: 411px;
-position: absolute;
-top: 150px;
-right: 400px;
+    display: block;
+    background: url("../../images/img-tara.png") no-repeat;
+    width: 672px;
+    height: 411px;
+    position: absolute;
+    top: 150px;
+    right: 50px;
 }
 
 .heroInform {
@@ -51,6 +51,8 @@ right: 400px;
 }
 
 .heroInform h1 {
+    font-weight: 400;
+    text-shadow: 0 1px 0 #fff;
     line-height: 50px;
     margin-bottom: 25px;
 }

@@ -3,7 +3,6 @@ import { Link, Route } from "react-router-dom";
 import "../../App.css";
 import classesCath from "../CathalogMain/CathalogMain.module.css";
 import Button from "@material-ui/core/Button";
-import Details from "../Details/Details";
 
 const GridSubCatItem = ({ url, subId, name, image, number }) => {
     // console.log(subCategory);

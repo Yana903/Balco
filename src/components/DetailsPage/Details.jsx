@@ -9,13 +9,15 @@ import Consulting from "../Consulting/Consulting";
 import Footer from "../Footer/Footer";
 import classesDetails from "./Details.module.css";
 import CheckCircleOutline from "@material-ui/icons/CheckCircleOutline";
+import Addition from "./Addition";
+import Slider from "./Slider";
 
 const GridSubCatItem = ({ subCategory }) => {
   return (
     <Fragment>
       <section className={classesAbout.sectionAbout}>
         <Container>
-          <div className={classesAbout.layoutAbout}>
+          <div className={classesDetails.layoutDetails}>
             <div className={classesAbout.layoutItem}>
               <div className={classesAbout.sidebar}>
                 <div className={classesAbout.headingSidebar}>
@@ -46,19 +48,55 @@ const GridSubCatItem = ({ subCategory }) => {
                       />
                       <p>доставка по всей Украине</p>
                     </div>
-                    <p className={classesDetails.minOrder}>
-                        Минимальный заказ: <span>2000 штук</span>
+                    <p className={classesDetails.minHeading}>
+                      Минимальный заказ: <span>2000 штук</span>
                     </p>
                     <div className={classesDetails.price}>
-                        <p>2000 - шт.</p>
-                        <span>1.89 грн.</span>
+                      <p>2000 - шт.</p>
+                      <span>1.89 грн.</span>
                     </div>
-                    <p className={classesDetails.number}>
+                    <div className={classesDetails.quantity}>
+                      <label>
                         Укажите количество:
-                    </p>
+                      </label>
+                      <div className={classesDetails.number}>
+                        <button type="button">-</button>
+                        <input type="number" value="2000" />
+                        <button type="button">+</button>
+
+                        <div className={classesDetails.sum}>
+                          <p>Сумма заказа</p>
+                          <span>3780.00</span>
+                        </div>
+                      </div>
+                      <div className={classesDetails.buttonGroup}>
+                        <Button
+                          style={{marginRight: "20px", width: "186px"}}
+                          fullWidth="true"
+                          variant="contained"
+                          color="secondary"
+                          component={Link}
+                        // to={`/subCategories/${id}`}
+                        >
+                          В корзину
+                        </Button>
+                        <Button
+                          style={{ width: "186px"}}
+                          variant="contained"
+                          color="primary"
+                          fullWidth="true"
+                          component={Link}
+                        // to={`${url}/${subId}`}
+                        >
+                          Купить в 1 клик
+                        </Button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
+              <Addition />
+              <Slider />
             </div>
           </div>
         </Container>
