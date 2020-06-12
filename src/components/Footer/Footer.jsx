@@ -26,7 +26,7 @@ const Header = () => {
             <div className={classesFooter.addressBlock}>
               <p> Харьков, проспект Московский, д. 2576, 1044 </p>
               <p> Пн.–Пт.с 9: 00 до 17: 00 </p>
-              <a href="bla-bla"> sales @tara.kh.ua </a>
+              <a href="bla-bla"> sales @balco.kh.ua </a>
             </div>
             <Phones />
           </div>

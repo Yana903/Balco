@@ -193,7 +193,7 @@
     /* border: 1px solid blue; */
     min-width: 100%;
     height: auto;
-    transition: 0.5s;
+    transition: 1.5s;
 }
 
 .slideButton {
@@ -224,4 +224,8 @@
 
 .sectionSlider h4 {
     text-align: center;
+}
+
+.sectionReview {
+    width: 100%;
 }

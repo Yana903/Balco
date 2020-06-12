@@ -7,6 +7,7 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Characteristic from "./Characteristic";
+import Review from "./Review";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -88,7 +89,7 @@ export default function Addition() {
           <Characteristic />
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
-          Отзывы
+          <Review />
         </TabPanel>
     </div>
   );
