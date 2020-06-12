@@ -12,7 +12,7 @@ import CheckCircleOutline from "@material-ui/icons/CheckCircleOutline";
 import Addition from "./Addition";
 import Slider from "./Slider";
 
-const GridSubCatItem = ({ subCategory }) => {
+const GridSubCatItem = ({ subCategory, sliderCategories }) => {
   return (
     <Fragment>
       <section className={classesAbout.sectionAbout}>
@@ -96,7 +96,7 @@ const GridSubCatItem = ({ subCategory }) => {
                 </div>
               </div>
               <Addition />
-              <Slider />
+              <Slider sliderCategories={sliderCategories}/>
             </div>
           </div>
         </Container>

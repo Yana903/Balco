@@ -222,8 +222,8 @@ export default function NavTabs() {
               const subCategory = subCategories.find(
                 ({ subId }) => subId === props.match.params.subId
               );
-                            
-              return <Details subCategory={subCategory} />;
+              const sliderCategories =  subCategories.slice(0, 4);         
+              return <Details subCategory={subCategory} sliderCategories={sliderCategories}/>;
             }}
           />
         </Switch>

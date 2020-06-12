@@ -1,76 +1,88 @@
 .wrapper {
-  position: relative;
-  overflow: hidden;
-  min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
 }
 
 p {
-  margin-top: 0;
-  margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 h1 {
-  font-size: 40px;
-  margin-top: 0;
-  margin-bottom: 0;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 h2 {
-  font-size: 40px;
-  font-weight: 300;
-  margin-top: 0;
-  margin-bottom: 0;
+    font-size: 40px;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 h3 {
-  margin-top: 0;
-  margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h4 {
+    font-size: 28px;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .headingPrimary,
 .headingPrimaryInverse {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
 }
 
 .headingPrimary {
-  color: #000;
+    color: #000;
 }
 
 .headingPrimaryInverse {
-  color: #fff;
+    color: #fff;
 }
 
 .headingPrimaryInverse h2 {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .headingPrimaryInverse p {
-  font-size: 18px;
-  line-height: 24px;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 .headingSecondary {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 40px;
 }
 
 .headingSecondary h2 {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .headingSecondary p {
-  font-size: 18px;
-  line-height: 22px;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+#goLeft {
+    left: 0;
+}
+
+#goRight {
+    right: 0;
 }
