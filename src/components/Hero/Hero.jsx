@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../App.css';
 import classesHero from './Hero.module.css';
+import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Button from '@material-ui/core/Button';
 
@@ -11,10 +12,10 @@ const Hero = () => {
             <div className={classesHero.heroForeground}>
                 <Container>
                     <div className={classesHero.heroInform}> 
-                        <h1>
+                        <Typography variant="h1">
                             Надёжный производтель
                             пластиковой тары и упаковки
-                        </h1>
+                        </Typography>
                         <p>
                             В сфере промышленной упаковки мы работаем уже 10 лет и имеем богатый
                             опыт, который позволяет нам качественно консультировать наших клиентов и

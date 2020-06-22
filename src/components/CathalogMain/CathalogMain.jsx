@@ -4,6 +4,7 @@ import classesCath from "./CathalogMain.module.css";
 import Container from "@material-ui/core/Container";
 import GridCathalog from "./GridCathalog";
 import Box from "@material-ui/core/Box";
+import Typography from '@material-ui/core/Typography';
 
 const Cathalog = ({containers}) => {
   return (
@@ -11,7 +12,9 @@ const Cathalog = ({containers}) => {
       <Box marginBottom="40px">
         <Container>
           <div className="headingPrimary">
-            <h2>Каталог продукции</h2>
+            <Typography variant="h2">
+               Каталог продукции
+            </Typography>
           </div>
           <GridCathalog containers={containers} />
         </Container>

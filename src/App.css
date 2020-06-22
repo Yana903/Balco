@@ -9,28 +9,6 @@ p {
     margin-bottom: 0;
 }
 
-h1 {
-    font-size: 40px;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-h2 {
-    font-size: 40px;
-    font-weight: 300;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-h4 {
-    font-size: 28px;
-}
-
 img {
     max-width: 100%;
     height: auto;
@@ -67,16 +45,45 @@ img {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .headingSecondary h2 {
-    margin-bottom: 0;
+    font-weight: 500;
 }
 
 .headingSecondary p {
     font-size: 18px;
+    font-weight: 700;
     line-height: 22px;
+    margin-top: 10px;
+}
+
+.headingSidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #3f51b5;
+    color: #fff;
+}
+
+.headingSidebar h3 {
+    text-align: center;
+    color: #fff;
+}
+
+.description, .descriptionInverce {
+    font-size: 18px;
+    line-height: 26px;
+    /* text-indent: 1.5em; */
+    margin-bottom: 20px;
+}
+
+.descriptionInverce {
+    color: #fff;
 }
 
 #goLeft {
@@ -86,3 +93,8 @@ img {
 #goRight {
     right: 0;
 }
+
+.MenuItem {
+    color: black;
+  }
+  

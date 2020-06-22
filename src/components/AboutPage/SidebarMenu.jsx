@@ -1,5 +1,7 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import "../../App.css";
+import classesAbout from "./About.module.css";
 import ExpansionPanel from "@material-ui/core/ExpansionPanel";
 import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
@@ -39,6 +41,12 @@ export default function SimpleExpansionPanel() {
   const classes = useStyles();
 
   return (
+    <Fragment>
+    <div className="headingSidebar">
+      <Typography variant="h4">
+        Каталог продукции
+      </Typography>
+    </div>
     <div className={classes.root}>
       <ExpansionPanel>
         <ExpansionPanelSummary
@@ -72,5 +80,6 @@ export default function SimpleExpansionPanel() {
         </ExpansionPanelDetails>
       </ExpansionPanel>
     </div>
+    </Fragment>
   );
 }

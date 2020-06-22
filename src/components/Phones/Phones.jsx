@@ -1,6 +1,5 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles';
-import classesPhones from './Phones.modules.css';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
@@ -32,7 +31,7 @@ const useStyles = makeStyles (theme => ({
 }));
 
 export default function SimpleSelect () {
-  const classes = useStyles ();
+  const classes = useStyles();
   const [phone, setPhone] = React.useState ('');
 
   const handleChange = event => {
@@ -59,7 +58,7 @@ export default function SimpleSelect () {
           </Select>
         </FormControl>
       </div>
-      <Button variant="contained" color="primary">
+      <Button variant="contained" color="primary" marginLeft="20px">
         Заказать звонок
       </Button>
     </div>

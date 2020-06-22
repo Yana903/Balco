@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../App.css';
 import classesPrinc from './Principles.module.css';
+import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 
 const Principles = () => {
@@ -8,9 +9,9 @@ const Principles = () => {
         <section className={classesPrinc.sectionPrinciples}>
             <Container>
                 <div className="headingPrimary">
-                    <h2>
-                        Наши принципы
-                    </h2>
+                <Typography variant="h2">
+                    Наши принципы
+                </Typography>
                 </div>
                 <div className={classesPrinc.gridPrinc}>
                     <div className={classesPrinc.gridItem}>

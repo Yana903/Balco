@@ -7,6 +7,7 @@ import Consulting from "../Consulting/Consulting";
 import Footer from "../Footer/Footer";
 import classesSubCat from "./SubCategory.module.css";
 import GridSubCatItem from "./GridSubCatItem";
+import Typography from '@material-ui/core/Typography';
 
 const Category = ({ match: { url }, name, description, subCategories }) => {
   return (
@@ -16,15 +17,14 @@ const Category = ({ match: { url }, name, description, subCategories }) => {
           <div className={classesAbout.layoutAbout}>
             <div className={classesAbout.layoutItem}>
               <div className={classesAbout.sidebar}>
-                <div className={classesAbout.headingSidebar}>
-                  <h3>Каталог продукции</h3>
-                </div>
                 <SidebarMenu />
               </div>
             </div>
             <div className={classesAbout.layoutItem}>
               <div className="headingSecondary">
-                <h2>{name}</h2>
+                <Typography variant="h2">
+                  {name}
+                </Typography>
               </div>
               <p className={classesAbout.description}>{description}</p>
               <div className={classesSubCat.gridSubCathalog}>

@@ -4,6 +4,7 @@ import classesDetails from "./Details.module.css";
 import GridSlider from "./GridSlider";
 import ArrowLeft from '@material-ui/icons/ArrowLeft';
 import ArrowRight from '@material-ui/icons/ArrowRight';
+import Typography from '@material-ui/core/Typography';
 
 
 const Slider = ({ sliderCategories }) => {
@@ -25,7 +26,9 @@ const Slider = ({ sliderCategories }) => {
 
     return (
         <section className={classesDetails.sectionSlider}>
-            <h4>Похожие товары из этого раздела:</h4>
+            <Typography variant="h4">
+                Похожие товары из этого раздела:
+            </Typography>
             <div className={classesDetails.slider}>
                 {
                     sliderArr.map((item, index) => {

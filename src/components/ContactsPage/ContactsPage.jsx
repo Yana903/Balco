@@ -6,6 +6,7 @@ import Container from "@material-ui/core/Container";
 import SidebarMenu from "../AboutPage/SidebarMenu";
 import Consulting from "../Consulting/Consulting";
 import Footer from "../Footer/Footer";
+import Typography from '@material-ui/core/Typography';
 
 const ContactsPage = () => {
   return (
@@ -15,15 +16,15 @@ const ContactsPage = () => {
           <div className={classesAbout.layoutAbout}>
             <div className={classesAbout.layoutItem}>
               <div className={classesAbout.sidebar}>
-                <div className={classesAbout.headingSidebar}>
-                  <h3>Каталог продукции</h3>
-                </div>
+
                 <SidebarMenu />
               </div>
             </div>
             <div className={classesAbout.layoutItem}>
-              <div className="hesdingSecondary">
-                <h2>Контакты</h2>
+              <div className="headingSecondary">
+                <Typography variant="h2">
+                  Контакты
+                </Typography>
               </div>
               <div className={classesCont.contacts}>
                 <p className={classesCont.title}>Отдел продаж:</p>

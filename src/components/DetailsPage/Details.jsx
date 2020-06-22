@@ -11,6 +11,7 @@ import classesDetails from "./Details.module.css";
 import CheckCircleOutline from "@material-ui/icons/CheckCircleOutline";
 import Addition from "./Addition";
 import Slider from "./Slider";
+import Typography from '@material-ui/core/Typography';
 
 const GridSubCatItem = ({ subCategory, sliderCategories }) => {
   return (
@@ -20,15 +21,14 @@ const GridSubCatItem = ({ subCategory, sliderCategories }) => {
           <div className={classesDetails.layoutDetails}>
             <div className={classesAbout.layoutItem}>
               <div className={classesAbout.sidebar}>
-                <div className={classesAbout.headingSidebar}>
-                  <h3>Каталог продукции</h3>
-                </div>
                 <SidebarMenu />
               </div>
             </div>
             <div className={classesAbout.layoutItem}>
               <div className="headingSecondary">
-                <h2>{subCategory.subName}</h2>
+                <Typography variant="h2">
+                  {subCategory.subName}
+                </Typography>
               </div>
               <div className={classesDetails.cardDetails}>
                 <div className={classesDetails.cardItem}>

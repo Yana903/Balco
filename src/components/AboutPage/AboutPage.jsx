@@ -5,6 +5,7 @@ import Container from "@material-ui/core/Container";
 import SidebarMenu from "./SidebarMenu";
 import Consulting from "../Consulting/Consulting";
 import Footer from "../Footer/Footer";
+import Typography from '@material-ui/core/Typography';
 
 const AboutPage = () => {
   return (
@@ -14,26 +15,25 @@ const AboutPage = () => {
           <div className={classesAbout.layoutAbout}>
             <div className={classesAbout.layoutItem}>
               <div className={classesAbout.sidebar}>
-                <div className={classesAbout.headingSidebar}>
-                  <h3>Каталог продукции</h3>
-                </div>
                 <SidebarMenu />
               </div>
             </div>
             <div className={classesAbout.layoutItem}>
-              <div className="hesdingSecondary">
-                <h2>О нас</h2>
+              <div className="headingSecondary">
+                <Typography variant="h2">
+                  О нас
+                </Typography>
+                <p>
+                  Фирма BALCo является производителем пластиковой тары пищевого и
+                  не пищевого назначения.
+                </p>
               </div>
-              <p className={classesAbout.title}>
-                Фирма BALCo является производителем пластиковой тары пищевого и
-                не пищевого назначения.
-              </p>
-              <p className={classesAbout.description}>
+              <p className="description">
                 В сфере промышленной упаковки мы работаем уже 10 лет и имеем
                 богатый опыт, который позволяет нам качественно консультировать
                 наших клиентов и подбирать им наилучший вариант упаковки.
               </p>
-              <p className={classesAbout.description}>
+              <p className="description">
                 Мы активно сотрудничаем с производителями как пищевой продукции
                 (мёд, халва, майонез, салаты, мороженное, молоко, сметана,
                 творог, спортивное питание, таблетки, витамины, капсулы и
@@ -42,7 +42,9 @@ const AboutPage = () => {
                 косметика, крема и мази, косметические жидкости, косметические
                 пасты).
               </p>
-              <p className={classesAbout.title}>Принципы нашей работы:</p>
+              <div className="headingSecondary">
+                <p>Принципы нашей работы:</p>
+              </div>
               <ul>
                 <li>баланс цены и качества предлагаемой тары и упаковки,</li>
                 <li>своевременность поставок,</li>
@@ -51,7 +53,9 @@ const AboutPage = () => {
                   упаковки.
                 </li>
               </ul>
-              <p className={classesAbout.title}>Характеристики продукции:</p>
+              <div className="headingSecondary">
+                <p>Характеристики продукции:</p>
+              </div>
               <ul>
                 <li>
                   высокое качество товара и наличие санитарных документов,
@@ -61,7 +65,7 @@ const AboutPage = () => {
                 <li>возможность индивидуальной колеровки тары под заказ,</li>
                 <li>прочность предлагаемой тары.,</li>
               </ul>
-              <p className={classesAbout.description}>
+              <p className="description">
                 Приглашаем всех производителей к совместному процветанию.
               </p>
             </div>
